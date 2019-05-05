@@ -19,6 +19,3 @@ RUN ["/usr/local/bin/docker-entrypoint.sh", "mysqld", "--datadir" , "/initialize
 FROM mysql:latest
 
 COPY --from=builder /initialized-db /var/lib/mysql
-db='sql2289841'
-user='sql2289841'
-password='aU4!kQ4*'
