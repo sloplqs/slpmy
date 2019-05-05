@@ -60,7 +60,7 @@ CREATE TABLE `user_done` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Indexes for dumped tables
+-- Indexes for dumped tables n
 --
 
 --
