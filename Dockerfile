@@ -5,6 +5,8 @@ RUN ["sed", "-i", "s/exec \"$@\"/echo \"not running $@\"/", "/usr/local/bin/dock
 
 # needed for intialization
 ENV MYSQL_ROOT_PASSWORD=rootA
+ENV MYSQL_USER=sql2289841
+ENV MYSQL_PASSWORD='t'aU4!kQ4*'
 
 COPY setup.sql /docker-entrypoint-initdb.d/
 #RUN mysqld --default-authentication-plugin=mysql_native_password
@@ -17,3 +19,6 @@ RUN ["/usr/local/bin/docker-entrypoint.sh", "mysqld", "--datadir" , "/initialize
 FROM mysql:latest
 
 COPY --from=builder /initialized-db /var/lib/mysql
+db='sql2289841'
+user='sql2289841'
+password='aU4!kQ4*'
