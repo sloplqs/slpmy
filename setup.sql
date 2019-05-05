@@ -43,7 +43,7 @@ CREATE TABLE `t_user_done` (
   `user_id` int(11) NOT NULL,
   `user_key` varchar(80) NOT NULL,
   `user_status` varchar(80) NOT NULL,
-  `user_date` date NOT NULL
+  `user_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
